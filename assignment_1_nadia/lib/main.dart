@@ -47,7 +47,6 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-  int _decounter = 0;
 
   void _incrementCounter() {
     setState(() {
@@ -62,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _decrementCounter(){
     setState(() {
-      _decounter--;
+    _counter--;
     });
   }
 
@@ -115,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
         mainAxisAlignment:  MainAxisAlignment.spaceAround,
         children:<Widget> [
           FloatingActionButton(onPressed: _incrementCounter,tooltip:'Increment',child:Icon(Icons.add)),
-          FloatingActionButton(onPressed: _decrementCounter, tooltip: 'Decrement', child: Icon(Icons.exposure_minus_1_outlined)),
+          FloatingActionButton(onPressed: _decrementCounter, tooltip: 'Decrement', child: Icon(Icons.minimize)),
         ],
       ),
       // floatingActionButton: FloatingActionButton(
